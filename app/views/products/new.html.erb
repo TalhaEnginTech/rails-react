@@ -1,0 +1,18 @@
+<h2> Add a new Product</h2>
+
+<%= form_for @product, remote: false do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title%>
+
+  <%= f.label :description %>
+  <%= f.text_area :description%>
+
+  <%= f.label :stock_quantity %>
+  <%= f.text_field :stock_quantity%>
+
+  <%= f.label :price %>
+  <%= f.text_field :price%>
+
+  <%= f.submit %>
+<%end %>
